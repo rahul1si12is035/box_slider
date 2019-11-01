@@ -6,19 +6,14 @@ import React from "react";
 import PropTypes from 'prop-types';
 
 /* Style imports */
-// import './styles.css';
+import './styles.css';
 
 
 /*** End Imports ***/
 
 const Slider = (props) => {
 
-    // helper function
-    // event handlers for static component
-
-    // const handleChangeSlider = (event) => {
-    //     props.handleChangeSlider(event);
-    // };
+    
     const { value, handleChangeSlider, name } = props;
 
     return (
@@ -26,8 +21,6 @@ const Slider = (props) => {
             <input
                 id="typeinp"
                 type="range"
-                // min="2"
-                // max="50"
                 name={name}
                 value={value}
                 onChange={(event) => handleChangeSlider(event)}

@@ -1,0 +1,17 @@
+.app-wrapper {
+  h1 {
+    text-align: center;
+  }
+  .box-slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .box-slider {
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

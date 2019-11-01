@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './styles.css';
 import Box from './components/Box/Box';
 import Slider from './components/Slider/Slider';
 
@@ -41,38 +41,41 @@ class App extends Component {
   // --------------------------------------------------------- render
   render() {
     return (
-      <div >
-        <div>
-          <Box width={this.state.value1} />
-          <Slider
-            value={this.state.value1}
-            name={"value1"}
-            handleChangeSlider={this.handleChangeSlider}
-          />
-        </div>
-        <div>
-          <Box width={this.state.value2} />
-          <Slider
-            value={this.state.value2}
-            name={"value2"}
-            handleChangeSlider={this.handleChangeSlider}
-          />
-        </div>
-        <div>
-          <Box width={this.state.value3} />
-          <Slider
-            value={this.state.value3}
-            name={"value3"}
-            handleChangeSlider={this.handleChangeSlider}
-          />
-        </div>
-        <div>
-          <Box width={this.state.value4} />
-          <Slider
-            value={this.state.value4}
-            name={"value4"}
-            handleChangeSlider={this.handleChangeSlider}
-          />
+      <div className="app-wrapper">
+        <h1>Boxes with sliders</h1>
+        <div className="box-slider-wrapper">
+          <div className="box-slider">
+            <Box width={this.state.value1} />
+            <Slider
+              value={this.state.value1}
+              name={"value1"}
+              handleChangeSlider={this.handleChangeSlider}
+            />
+          </div>
+          <div className="box-slider">
+            <Box width={this.state.value2} />
+            <Slider
+              value={this.state.value2}
+              name={"value2"}
+              handleChangeSlider={this.handleChangeSlider}
+            />
+          </div>
+          <div className="box-slider">
+            <Box width={this.state.value3} />
+            <Slider
+              value={this.state.value3}
+              name={"value3"}
+              handleChangeSlider={this.handleChangeSlider}
+            />
+          </div>
+          <div className="box-slider">
+            <Box width={this.state.value4} />
+            <Slider
+              value={this.state.value4}
+              name={"value4"}
+              handleChangeSlider={this.handleChangeSlider}
+            />
+          </div>
         </div>
       </div>
     );
